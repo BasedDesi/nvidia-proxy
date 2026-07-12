@@ -34,12 +34,12 @@ client = OpenAI(
 class ChatRequest(BaseModel):
     model: str
     messages: list
-    temperature: float = 0.85
+    temperature: float = 1.0
     max_tokens: int = 16384
     stream: bool = False
-    top_p: float = 0.1
+    top_p: float = 1.0
     top_k: float = 16
-    frequency_penalty: float = 0.39
+    frequency_penalty: float = 0.0
     presence_penalty: float = 0.0
     repeatition_penalty: float = 0.17
 
